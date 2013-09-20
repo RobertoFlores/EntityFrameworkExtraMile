@@ -3,16 +3,14 @@ using System.Collections.ObjectModel;
 
 namespace EntityFrameworkExtraMile.Web.Domain.Model
 {
-    public class Author : EntityBase
+    public class Category : EntityBase
     {
-        public Author()
+        public Category()
         {
             Posts = new Collection<Post>();
         }
-
+        
         public string Name { get; set; }
-        public string TwitterHandle { get; set; }
         public virtual ICollection<Post> Posts { get; set; }
-        public virtual JobTitle JobTitle { get; set; }
     }
 }

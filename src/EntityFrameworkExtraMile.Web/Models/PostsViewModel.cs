@@ -6,5 +6,7 @@ namespace EntityFrameworkExtraMile.Web.Models
         public string Url { get; set; }
         public string AuthorName { get; set; }
         public string AuthorTwitterHandle { get; set; }
+        public int AuthorID { get; set; }
+        public string JobTitle { get; set; }
     }
 }

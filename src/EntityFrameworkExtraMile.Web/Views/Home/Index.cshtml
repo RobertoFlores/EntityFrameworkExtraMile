@@ -5,11 +5,11 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Posts</h2>
+<h1>Posts</h1>
 
 <ul>
     @foreach (var post in Model)
     {
-        <li><a href="@post.Url">@post.Title</a> - by <a href="http:\\www.twitter.com\@post.AuthorTwitterHandle">@post.AuthorName</a></li>
+        <li><a href="@post.Url">@post.Title</a> - by @post.JobTitle @Html.ActionLink(post.AuthorName, "Author", new { id = post.AuthorID })</li>
     }
 </ul>

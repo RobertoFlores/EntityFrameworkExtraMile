@@ -1,0 +1,17 @@
+﻿@model EntityFrameworkExtraMile.Web.Models.AuthorViewModel
+
+@{
+    ViewBag.Title = "Author";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@Model.Name</h1>
+Contact me on <a href="http://www.twitter.com/@Model.TwitterHandle">Twitter</a>!
+
+<h2>Posts</h2>
+<ul>
+    @foreach (var post in Model.Posts)
+    {
+        <li><a href="@post.Url">@post.Title</a> - Filed under <strong>@post.Category</strong></li>
+    }
+</ul>

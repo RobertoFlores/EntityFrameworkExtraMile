@@ -137,11 +137,14 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DataAccess\DatabaseInitializer.cs" />
     <Compile Include="Domain\Model\Author.cs" />
+    <Compile Include="Domain\Model\Category.cs" />
     <Compile Include="Domain\Model\EntityBase.cs" />
+    <Compile Include="Domain\Model\JobTitle.cs" />
     <Compile Include="Domain\Model\Post.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AuthorViewModel.cs" />
     <Compile Include="Models\PostsViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -231,6 +234,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Author.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
