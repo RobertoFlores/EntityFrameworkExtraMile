@@ -133,9 +133,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="DataAccess\AuthorConfiguration.cs" />
     <Compile Include="DataAccess\BlogContext.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="DataAccess\CategoryConfiguration.cs" />
     <Compile Include="DataAccess\DatabaseInitializer.cs" />
+    <Compile Include="DataAccess\JobTitleConfiguration.cs" />
+    <Compile Include="DataAccess\PostConfiguration.cs" />
     <Compile Include="Domain\Model\Author.cs" />
     <Compile Include="Domain\Model\Category.cs" />
     <Compile Include="Domain\Model\EntityBase.cs" />
