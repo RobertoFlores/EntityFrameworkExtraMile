@@ -137,7 +137,6 @@
     <Compile Include="DataAccess\BlogContext.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DataAccess\CategoryConfiguration.cs" />
-    <Compile Include="DataAccess\DatabaseInitializer.cs" />
     <Compile Include="DataAccess\JobTitleConfiguration.cs" />
     <Compile Include="DataAccess\PostConfiguration.cs" />
     <Compile Include="Domain\Model\Author.cs" />
@@ -148,6 +147,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AuthorViewModel.cs" />
     <Compile Include="Models\PostsViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

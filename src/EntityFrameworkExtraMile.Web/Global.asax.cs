@@ -1,11 +1,8 @@
-﻿using System.Data.Entity;
-using System.Linq;
-using System.Web;
+﻿using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using EntityFrameworkExtraMile.Web.DataAccess;
 
 namespace EntityFrameworkExtraMile.Web
 {
@@ -13,10 +10,6 @@ namespace EntityFrameworkExtraMile.Web
     {
         protected void Application_Start()
         {
-            Database.SetInitializer(new DatabaseInitializer());
-            var context = new BlogContext();
-            context.Authors.FirstOrDefault(); //Convince EF to run. Facepalm.
-            
             AreaRegistration.RegisterAllAreas();
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
