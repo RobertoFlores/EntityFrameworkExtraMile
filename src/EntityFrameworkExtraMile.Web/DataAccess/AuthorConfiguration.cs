@@ -10,7 +10,7 @@ namespace EntityFrameworkExtraMile.Web.DataAccess
             HasKey(author => author.ID);
             Property(author => author.Name).HasMaxLength(50).IsRequired();
             Property(author => author.TwitterHandle).HasMaxLength(50);
-            Property(author => author.Email).HasMaxLength(50);
+            Property(author => author.Email).HasMaxLength(50); //<-- and there
 
             HasOptional(author => author.JobTitle)
                 .WithMany(title => title.Authors)
